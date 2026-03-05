@@ -1,0 +1,6 @@
+# ninja log v5
+18	116	0	C:/Users/Pradeep/BR/AwesomeApp/android/app/.cxx/Debug/6s6q4rc4/arm64-v8a/CMakeFiles/cmake.verify_globs	925c8c5a7332d542
+124	11430	7943933199962118	safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/078dbf4031440d3d4836faba1dcc937d/jni/react/renderer/components/safeareacontext/States.cpp.o	32068683fff49882
+59	12240	7943933208292106	safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/6e3ef3bfc0b742575a854dec8c77ee26/react/renderer/components/safeareacontext/EventEmitters.cpp.o	1b3aba0a2f936969
+138	13138	7943933217349829	safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/8bfebffbb09369f08d65f3313a8ba3ce/generated/source/codegen/jni/safeareacontext-generated.cpp.o	258d3c601fe74842
+15	14289	7943933228729818	CMakeFiles/appmodules.dir/OnLoad.cpp.o	571ab809fdc8bae4
