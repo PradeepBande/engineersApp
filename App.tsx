@@ -5,12 +5,14 @@
  * @format
  */
 
-import { NewAppScreen } from '@react-native/new-app-screen';
-import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
+// NewAppScreen sometimes crashes because ReactNativeVersion is undefined
+// so we'll avoid using it directly and display a basic placeholder instead.
+import { StatusBar, StyleSheet, useColorScheme, View, Text } from 'react-native';
 import {
   SafeAreaProvider,
   useSafeAreaInsets,
 } from 'react-native-safe-area-context';
+import { HomeScreen } from './HomeScreen';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
@@ -23,15 +25,18 @@ function App() {
   );
 }
 
+
 function AppContent() {
   const safeAreaInsets = useSafeAreaInsets();
 
   return (
     <View style={styles.container}>
-      <NewAppScreen
-        templateFileName="App.tsx"
-        safeAreaInsets={safeAreaInsets}
-      />
+      {/* Fallback view because @react-native/new-app-screen may reference
+          ReactNativeVersion which can be undefined in some environments */}
+      <Text style={{ textAlign: 'center', marginTop: 50 }}>
+        Welcome to engineersApp!
+      </Text>
+      <HomeScreen />
     </View>
   );
 }
